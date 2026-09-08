@@ -1,0 +1,4 @@
+# Força quebras de linha LF em todo o repositório.
+# Necessário porque o shebang dos scripts (#!) quebra quando o arquivo
+# tem CRLF — e evita que `core.autocrlf=true` corrompa as quebras no checkout.
+* text=auto eol=lf

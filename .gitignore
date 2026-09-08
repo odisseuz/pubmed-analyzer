@@ -1,0 +1,30 @@
+# Logs de busca
+search_logs/
+
+# Arquivos exportados pelo script
+pubmed_*.csv
+pubmed_*.json
+pubmed_*.bib
+pubmed_*.txt
+test_*.csv
+test_*.json
+test_*.bib
+test_*.txt
+test_report.txt
+
+# Artefatos do demo
+*.gif
+refs.bib
+
+# Chave de API
+.pubmed_api_key
+
+# Arquivos temporários
+*.tmp
+*.swp
+.DS_Store
+
+# Ambiente Python (se migrar)
+venv/
+__pycache__/
+*.pyc

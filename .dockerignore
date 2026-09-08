@@ -1,0 +1,21 @@
+# Git
+.git
+.gitignore
+
+# macOS
+.DS_Store
+
+# Artefatos de busca/exportação (não devem ir para a imagem)
+search_logs/
+*.csv
+*.json
+*.bib
+pubmed_pmids_*.txt
+
+# Chave de API
+.pubmed_api_key
+
+# Ambiente Python (se migrar)
+venv/
+__pycache__/
+*.pyc
