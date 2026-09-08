@@ -11,7 +11,7 @@ test_*.json
 test_*.bib
 test_*.txt
 test_report.txt
-
+*.tape
 # Artefatos do demo
 *.gif
 refs.bib
