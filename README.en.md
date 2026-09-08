@@ -3,6 +3,8 @@
 ![Bash](https://img.shields.io/badge/bash-3.2%2B-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Docker](https://img.shields.io/badge/Docker-Supported-2496ED?logo=docker)
+[![DOI](https://zenodo.org/badge/1361309655.svg)](https://doi.org/10.5281/zenodo.22661614)
+
 
 <details>
   <summary><b>👀 Interactive Mode</b></summary>
