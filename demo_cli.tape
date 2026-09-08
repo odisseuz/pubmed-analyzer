@@ -1,8 +1,8 @@
-# PubMed Analyzer — demo CLI (modo declarativo/automático)
-# Gera demo_cli.gif mostrando o fluxo automático:
-# busca declarativa -> BibTeX -> log imutável (com SHA).
+# PubMed Analyzer — demo CLI (modo declarativo)
+# Gera demo_cli.gif. Foco no "money shot": uma linha de comando
+# gera citações BibTeX com DOI + um log reprodutível.
 #
-# Requer: vhs (com ttyd/ffmpeg), curl, jq, bat e rede.
+# Requer: vhs (ttyd/ffmpeg), curl, jq, bat e rede.
 
 Output demo_cli.gif
 
@@ -21,23 +21,22 @@ Set MarginFill "#303446"
 Set WindowBar Colorful
 Set BorderRadius 14
 Set CursorBlink false
-Set TypingSpeed 15ms
+Set TypingSpeed 30ms
 
-# 1. Busca declarativa (mesma pesquisa, em uma linha)
-Type "./analyze.sh --lang en -q 'autism' -y 2020-2024 -s pub_date --max 8 -o refs.bib"
+# 1. Busca declarativa com filtros (tipo, anos, ordenação)
+Type "./analyze.sh --lang en -q 'cancer immunotherapy' -t review -y 2020-2024 -s pub_date --max 8 -o refs.bib"
 Enter
-Sleep 5s
+Sleep 6s
 
-# 2. BibTeX com syntax highlight (bat)
-Type "bat refs.bib"
+# 2. BibTeX com DOI, volume e páginas (syntax highlight)
+Type "bat --paging=never refs.bib"
 Enter
-Sleep 4s
+Sleep 8s
 
-# 3. Log imutável, com SHA e URL mascarada (bat no log mais recente)
-Type `bat "$(ls -t search_logs/search_*.txt | head -n 1)"`
+# 3. Log imutável: SHA-256, count geral e URL mascarada
+Type `bat --paging=never "$(ls -t search_logs/search_*.txt | head -n 1)"`
 Enter
-Sleep 5s
+Sleep 8s
 
-# Limpa
 Type "clear"
 Enter
