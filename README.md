@@ -1,4 +1,27 @@
 # PubMed Analyzer
+![Bash](https://img.shields.io/badge/bash-3.2%2B-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Docker](https://img.shields.io/badge/Docker-Supported-2496ED?logo=docker)
+
+<details>
+  <summary><b>👀Modo Interativo</b></summary>
+  
+  <br>
+  
+  ![Modo Interativo](https://vhs.charm.sh/vhs-yzarfgynyikL615iZvq1I.gif)
+
+</details>
+
+<details>
+  <summary><b>👀Modo declarativo (Exportação Autônoma)</b></summary>
+
+  <br>
+  
+  ![Modo CLI](https://vhs.charm.sh/vhs-1QTZOdlqvQAGP8hY7ZGONF.gif)
+
+</details>
+
+<br>
 
 Script interativo em Bash para buscar artigos no PubMed via
 [NCBI E-utilities](https://www.ncbi.nlm.nih.gov/books/NBK25501/), navegar pelos
